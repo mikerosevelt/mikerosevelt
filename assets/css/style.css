@@ -1,0 +1,207 @@
+html {
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Rubik' !important;
+	font-weight: 300;
+	margin-top: 8px;
+	padding-top: 8vh;
+}
+
+/* NAVBAR */
+
+nav {
+	/*  */
+	/* position: sticky; */
+	top: 0;
+	/* font-size: 18px; */
+	/* background-color: #0c0f16; */
+	/* box-shadow: 0px 5px 20px rgba(216, 216, 216, 0.1); */
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	transition: opacity 200ms ease-in-out;
+	overflow: hidden;
+	margin-right: 24px;
+}
+
+nav ul li a::after {
+	content: '';
+	display: block;
+	width: 0%;
+	height: 3px;
+	margin-top: 3px;
+	border-radius: 3px;
+	background-color: #00a9b9;
+	/* background-color: lightseagreen; */
+	transition: width 0.2s ease-in-out;
+}
+
+nav ul li a.current::after {
+	width: 100%;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+.navbar-brand {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.navbar {
+	transition: all 0.4s;
+}
+
+.navbar-brand {
+	color: white;
+	font-size: 30px;
+}
+
+.navbar-toggle {
+	color: ghostwhite;
+}
+/* .navbar li.active a {
+	color: #fafafa;
+}
+.navbar .navbar-toggle .icon-bar {
+	background: #131313;
+} */
+
+.shrink .navbar {
+	color: #fafafa;
+	background: #00c6ff;
+	/* background: linear-gradient(35deg, #00c6ff 10%, #0072ff 90%); */
+	background: #1c2331;
+}
+.shrink .navbar-toggle .icon-bar {
+	background: #fafafa;
+}
+
+/* Sections */
+
+section {
+	background: var(--color);
+	height: 100vh;
+	padding-top: 18px;
+	/* padding-top: 6vh;
+	padding-left: 4vh;
+	padding-right: 4vh;
+	padding-bottom: 2vh; */
+}
+
+.home {
+	background-image: url('../img/header.jpg');
+	background-size: cover;
+	margin-top: -62px;
+}
+
+.card {
+	transition: 0.3s;
+	/* border: none; */
+	background-color: gainsboro;
+}
+
+.card:hover {
+	box-shadow: 0 0.7rem 2rem rgba(228, 228, 228, 0.2) !important;
+	transform: translateY(-4px);
+}
+
+img,
+.card-img-top {
+	border-radius: 0em;
+}
+
+.d-flex div {
+	margin: 8px;
+}
+
+.img-profile {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-left: 124px;
+	margin-bottom: 16px;
+	box-shadow: 0 2px 10px rgba(228, 228, 228, 0.2);
+}
+
+.img-profile img {
+	width: 100%;
+	height: auto;
+	margin-top: -32px;
+}
+
+.about-me-text {
+	font-size: 16px;
+}
+
+.skills-wrapper li {
+	margin-bottom: 8px;
+}
+
+/* BACK TO TOP BUTTON */
+.back-to-top {
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	display: none;
+}
+
+hr {
+	background-color: #1c2331;
+}
+
+/* FOOTER */
+footer {
+	background: #1c2331;
+}
+footer a {
+	color: white;
+}
+
+footer a:hover {
+	color: gainsboro;
+	text-decoration: none;
+}
+
+.footer-copyright {
+	color: white;
+}
+
+/* ABOUT SECTION */
+.social-link {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #ddd;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #666;
+	border-radius: 50%;
+	transition: all 0.3s;
+	font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+	background: #ddd;
+	text-decoration: none;
+	color: #555;
+}
